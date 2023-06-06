@@ -15,6 +15,7 @@ public class Highway {
    */
   public static void main(String[] args) throws IOException {
     if (args.length == 0) {
+      System.out.println("Provide Input");
       new Highway().doIt(System.in);
     } else {
       BufferedInputStream in = new BufferedInputStream(new FileInputStream(new File(args[0])));
